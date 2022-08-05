@@ -8,3 +8,4 @@ openModal.addEventListener("click",()=>{
 modal.addEventListener("click",()=>{
     modal.classList.add("invisible");
 })
+
