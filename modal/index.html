@@ -16,10 +16,15 @@
 </style>
 
 <body class="h-screen flex flex-col justify-center items-center bg-indigo-100">
-    <button class="bg-indigo-900 text-white p-3 rounded text-2xl">Abrir Janela</button>
-    
-    <img src="https://i.pinimg.com/originals/27/f0/64/27f064a080529cf9e7be73cd5fc47113.gif" alt="shylily" class="hidden fixed">
-    
+    <button onclick="toggleLily(this.innerText)" id="openModal" class="bg-indigo-900 text-white p-3 rounded-md text-2xl shadow-lg">Click on me</button>
+
+    <section id="modal" class="fixed invisible justify-center items-center h-screen w-screen flex bg-violet-300">
+        <div class="bg-indigo-900 p-3 m-3 w-fit h-fit rounded-md shadow-lg">
+            <img src="https://i.pinimg.com/originals/27/f0/64/27f064a080529cf9e7be73cd5fc47113.gif" alt="shylily"
+                class=" rounded-md">
+        </div>
+    </section>
+
     <script src="script.js"></script>
 </body>
 
