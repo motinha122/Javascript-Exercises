@@ -1,7 +1,10 @@
 const openModal = document.querySelector("#openModal");
+const modal = document.querySelector("#modal");
 
-console.log(openModal.innerHTML);
+openModal.addEventListener("click",()=>{
+    modal.classList.remove("invisible");
+})
 
-function toggleLily(input) {
-    console.log(input);
-}
+modal.addEventListener("click",()=>{
+    modal.classList.add("invisible");
+})
